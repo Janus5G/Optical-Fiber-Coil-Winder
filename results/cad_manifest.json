@@ -1,0 +1,650 @@
+{
+  "budget-v1": {
+    "parameters_mm": {
+      "base_x": 420.0,
+      "base_y": 180.0,
+      "base_t": 10.0,
+      "assembly_h": 165.0,
+      "supply_x": 90.0,
+      "takeup_x": 328.0,
+      "spindle_z": 95.0,
+      "spindle_y": 90.0,
+      "core_d": 60.0,
+      "max_od": 112.0,
+      "width": 75.0,
+      "traverse_x": 252.0,
+      "traverse_travel": 80.0,
+      "flange_d": 112.0,
+      "leadscrew_len": 132.0
+    },
+    "files": [
+      {
+        "part": "base_plate",
+        "step": "budget-v1/cad/base_plate.step",
+        "stl": "budget-v1/cad/base_plate.stl",
+        "nominal_bbox_mm": [
+          420.0,
+          180.0,
+          10.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "spool_core",
+        "step": "budget-v1/cad/spool_core.step",
+        "stl": "budget-v1/cad/spool_core.stl",
+        "nominal_bbox_mm": [
+          60.0,
+          75.0,
+          60.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "flange",
+        "step": "budget-v1/cad/flange.step",
+        "stl": "budget-v1/cad/flange.stl",
+        "nominal_bbox_mm": [
+          112.0,
+          4.0,
+          112.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "bearing_block",
+        "step": "budget-v1/cad/bearing_block.step",
+        "stl": "budget-v1/cad/bearing_block.stl",
+        "nominal_bbox_mm": [
+          38.0,
+          18.0,
+          41.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "nema17_mount",
+        "step": "budget-v1/cad/nema17_mount.step",
+        "stl": "budget-v1/cad/nema17_mount.stl",
+        "nominal_bbox_mm": [
+          54.0,
+          38.0,
+          53.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "traverse_rail_support",
+        "step": "budget-v1/cad/traverse_rail_support.step",
+        "stl": "budget-v1/cad/traverse_rail_support.stl",
+        "nominal_bbox_mm": [
+          44.0,
+          20.0,
+          45.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "traverse_slider",
+        "step": "budget-v1/cad/traverse_slider.step",
+        "stl": "budget-v1/cad/traverse_slider.stl",
+        "nominal_bbox_mm": [
+          48.0,
+          24.0,
+          24.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "ceramic_eyelet_mount",
+        "step": "budget-v1/cad/ceramic_eyelet_mount.step",
+        "stl": "budget-v1/cad/ceramic_eyelet_mount.stl",
+        "nominal_bbox_mm": [
+          38.0,
+          22.0,
+          35.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "dancer_pivot",
+        "step": "budget-v1/cad/dancer_pivot.step",
+        "stl": "budget-v1/cad/dancer_pivot.stl",
+        "nominal_bbox_mm": [
+          42.0,
+          32.0,
+          28.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "dancer_arm",
+        "step": "budget-v1/cad/dancer_arm.step",
+        "stl": "budget-v1/cad/dancer_arm.stl",
+        "nominal_bbox_mm": [
+          100.0,
+          14.0,
+          7.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "brake_mount",
+        "step": "budget-v1/cad/brake_mount.step",
+        "stl": "budget-v1/cad/brake_mount.stl",
+        "nominal_bbox_mm": [
+          28.0,
+          24.0,
+          34.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "controller_bracket",
+        "step": "budget-v1/cad/controller_bracket.step",
+        "stl": "budget-v1/cad/controller_bracket.stl",
+        "nominal_bbox_mm": [
+          74.0,
+          52.0,
+          3.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "guard_switch_mount",
+        "step": "budget-v1/cad/guard_switch_mount.step",
+        "stl": "budget-v1/cad/guard_switch_mount.stl",
+        "nominal_bbox_mm": [
+          32.0,
+          28.0,
+          35.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      }
+    ],
+    "assembly_nominal_step": "budget-v1/cad/assembly_nominal.step",
+    "base_hole_manifest": [
+      {
+        "x_mm": 75.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 75.0,
+        "y_mm": 168.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 105.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 105.0,
+        "y_mm": 168.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 313.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 313.0,
+        "y_mm": 168.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 343.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 343.0,
+        "y_mm": 168.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 236.0,
+        "y_mm": 40.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 236.0,
+        "y_mm": 140.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 268.0,
+        "y_mm": 40.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 268.0,
+        "y_mm": 140.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 349.0,
+        "y_mm": 143.0,
+        "radius_mm": 2.25,
+        "for_part": "nema17_mount"
+      },
+      {
+        "x_mm": 391.0,
+        "y_mm": 143.0,
+        "radius_mm": 2.25,
+        "for_part": "nema17_mount"
+      },
+      {
+        "x_mm": 146.0,
+        "y_mm": 90.0,
+        "radius_mm": 2.25,
+        "for_part": "dancer_pivot"
+      },
+      {
+        "x_mm": 174.0,
+        "y_mm": 90.0,
+        "radius_mm": 2.25,
+        "for_part": "dancer_pivot"
+      },
+      {
+        "x_mm": 56.0,
+        "y_mm": 155.0,
+        "radius_mm": 2.2,
+        "for_part": "brake_mount"
+      },
+      {
+        "x_mm": 180.0,
+        "y_mm": 8,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 180.0,
+        "y_mm": 44,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 240.0,
+        "y_mm": 8,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 240.0,
+        "y_mm": 44,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 15,
+        "y_mm": 15,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      },
+      {
+        "x_mm": 15,
+        "y_mm": 165.0,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      },
+      {
+        "x_mm": 405.0,
+        "y_mm": 15,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      },
+      {
+        "x_mm": 405.0,
+        "y_mm": 165.0,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      }
+    ],
+    "reference_notes": "Metal shafts, bearings, motor, drives, pulley/belt, ceramic inserts and standard guard interlock need procurement-specific verification"
+  },
+  "standard-v1": {
+    "parameters_mm": {
+      "base_x": 500.0,
+      "base_y": 250.0,
+      "base_t": 10.0,
+      "assembly_h": 300.0,
+      "supply_x": 105.0,
+      "takeup_x": 380.0,
+      "spindle_z": 130.0,
+      "spindle_y": 125.0,
+      "core_d": 90.0,
+      "max_od": 150.0,
+      "width": 100.0,
+      "traverse_x": 301.0,
+      "traverse_travel": 120.0,
+      "flange_d": 150.0,
+      "leadscrew_len": 178.0
+    },
+    "files": [
+      {
+        "part": "base_plate",
+        "step": "standard-v1/cad/base_plate.step",
+        "stl": "standard-v1/cad/base_plate.stl",
+        "nominal_bbox_mm": [
+          500.0,
+          250.0,
+          10.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "spool_core",
+        "step": "standard-v1/cad/spool_core.step",
+        "stl": "standard-v1/cad/spool_core.stl",
+        "nominal_bbox_mm": [
+          90.0,
+          100.0,
+          90.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "flange",
+        "step": "standard-v1/cad/flange.step",
+        "stl": "standard-v1/cad/flange.stl",
+        "nominal_bbox_mm": [
+          150.0,
+          4.0,
+          150.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "bearing_block",
+        "step": "standard-v1/cad/bearing_block.step",
+        "stl": "standard-v1/cad/bearing_block.stl",
+        "nominal_bbox_mm": [
+          38.0,
+          18.0,
+          41.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "nema17_mount",
+        "step": "standard-v1/cad/nema17_mount.step",
+        "stl": "standard-v1/cad/nema17_mount.stl",
+        "nominal_bbox_mm": [
+          54.0,
+          38.0,
+          53.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "traverse_rail_support",
+        "step": "standard-v1/cad/traverse_rail_support.step",
+        "stl": "standard-v1/cad/traverse_rail_support.stl",
+        "nominal_bbox_mm": [
+          44.0,
+          20.0,
+          45.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "traverse_slider",
+        "step": "standard-v1/cad/traverse_slider.step",
+        "stl": "standard-v1/cad/traverse_slider.stl",
+        "nominal_bbox_mm": [
+          48.0,
+          24.0,
+          24.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "ceramic_eyelet_mount",
+        "step": "standard-v1/cad/ceramic_eyelet_mount.step",
+        "stl": "standard-v1/cad/ceramic_eyelet_mount.stl",
+        "nominal_bbox_mm": [
+          38.0,
+          22.0,
+          35.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "dancer_pivot",
+        "step": "standard-v1/cad/dancer_pivot.step",
+        "stl": "standard-v1/cad/dancer_pivot.stl",
+        "nominal_bbox_mm": [
+          42.0,
+          32.0,
+          28.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "dancer_arm",
+        "step": "standard-v1/cad/dancer_arm.step",
+        "stl": "standard-v1/cad/dancer_arm.stl",
+        "nominal_bbox_mm": [
+          100.0,
+          14.0,
+          7.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "brake_mount",
+        "step": "standard-v1/cad/brake_mount.step",
+        "stl": "standard-v1/cad/brake_mount.stl",
+        "nominal_bbox_mm": [
+          28.0,
+          24.0,
+          34.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "controller_bracket",
+        "step": "standard-v1/cad/controller_bracket.step",
+        "stl": "standard-v1/cad/controller_bracket.stl",
+        "nominal_bbox_mm": [
+          74.0,
+          52.0,
+          3.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      },
+      {
+        "part": "guard_switch_mount",
+        "step": "standard-v1/cad/guard_switch_mount.step",
+        "stl": "standard-v1/cad/guard_switch_mount.stl",
+        "nominal_bbox_mm": [
+          32.0,
+          28.0,
+          35.0
+        ],
+        "status": "FIT VERIFICATION REQUIRED"
+      }
+    ],
+    "assembly_nominal_step": "standard-v1/cad/assembly_nominal.step",
+    "base_hole_manifest": [
+      {
+        "x_mm": 90.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 90.0,
+        "y_mm": 238.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 120.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 120.0,
+        "y_mm": 238.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 365.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 365.0,
+        "y_mm": 238.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 395.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 395.0,
+        "y_mm": 238.0,
+        "radius_mm": 2.25,
+        "for_part": "bearing_block"
+      },
+      {
+        "x_mm": 285.0,
+        "y_mm": 55.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 285.0,
+        "y_mm": 195.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 317.0,
+        "y_mm": 55.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 317.0,
+        "y_mm": 195.0,
+        "radius_mm": 2.25,
+        "for_part": "traverse_rail_support"
+      },
+      {
+        "x_mm": 401.0,
+        "y_mm": 213.0,
+        "radius_mm": 2.25,
+        "for_part": "nema17_mount"
+      },
+      {
+        "x_mm": 443.0,
+        "y_mm": 213.0,
+        "radius_mm": 2.25,
+        "for_part": "nema17_mount"
+      },
+      {
+        "x_mm": 161.0,
+        "y_mm": 125.0,
+        "radius_mm": 2.25,
+        "for_part": "dancer_pivot"
+      },
+      {
+        "x_mm": 189.0,
+        "y_mm": 125.0,
+        "radius_mm": 2.25,
+        "for_part": "dancer_pivot"
+      },
+      {
+        "x_mm": 71.0,
+        "y_mm": 225.0,
+        "radius_mm": 2.2,
+        "for_part": "brake_mount"
+      },
+      {
+        "x_mm": 220.0,
+        "y_mm": 8,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 220.0,
+        "y_mm": 44,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 280.0,
+        "y_mm": 8,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 280.0,
+        "y_mm": 44,
+        "radius_mm": 1.65,
+        "for_part": "controller_bracket"
+      },
+      {
+        "x_mm": 450.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "guard_switch_mount"
+      },
+      {
+        "x_mm": 470.0,
+        "y_mm": 12,
+        "radius_mm": 2.25,
+        "for_part": "guard_switch_mount"
+      },
+      {
+        "x_mm": 15,
+        "y_mm": 15,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      },
+      {
+        "x_mm": 15,
+        "y_mm": 235.0,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      },
+      {
+        "x_mm": 485.0,
+        "y_mm": 15,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      },
+      {
+        "x_mm": 485.0,
+        "y_mm": 235.0,
+        "radius_mm": 3.0,
+        "for_part": "base_to_bench"
+      }
+    ],
+    "reference_notes": "Metal shafts, bearings, motor, drives, pulley/belt, ceramic inserts and standard guard interlock need procurement-specific verification"
+  }
+}

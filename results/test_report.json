@@ -1,0 +1,331 @@
+{
+  "project": "Optical-Fiber-Coil-Winder",
+  "release": "v1.0.0-RC1.1",
+  "date_utc": "2026-10-13T06:39:38.333661+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "suite": "host/offline software; no physical measurements",
+  "test_command": "python tools/run_tests.py",
+  "exit_code": 0,
+  "summary": {
+    "PASS": 47,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 15
+  },
+  "results": [
+    {
+      "name": "tests.test_cad_exports.test_cad_has_actual_files",
+      "status": "PASS",
+      "seconds": 0.055
+    },
+    {
+      "name": "tests.test_cad_exports.test_cad_export_nominal_bounding_boxes",
+      "status": "PASS",
+      "seconds": 1.28
+    },
+    {
+      "name": "tests.test_cad_exports.test_base_plate_export_dimensions",
+      "status": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "name": "tests.test_cad_exports.test_spool_outer_diameter_not_greater_than_envelope",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_cad_exports.test_assembly_nominal_envelope",
+      "status": "PASS",
+      "seconds": 2.409
+    },
+    {
+      "name": "tests.test_cad_exports.test_nominal_parts_still_on_fit_hold",
+      "status": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "name": "tests.test_cad_exports.test_drill_pattern_matches_base_manifest",
+      "status": "PASS",
+      "seconds": 0.019
+    },
+    {
+      "name": "tests.test_cad_exports.test_base_drill_no_hole_overlap",
+      "status": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "name": "tests.test_control.test_machine_homing",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_cannot_start_without_home",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_requires_limit_sensor_for_home",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_standard_fails_without_sensor_feedback",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_standard_fails_without_tension_limits",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_max_tension_fail_closed",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_break_detection_low_tension",
+      "status": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "name": "tests.test_control.test_encoder_loss_fault",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_endstop_fault",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_estop_fault",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_guard_open_fault",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_pause_and_stop",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_finishes_2m",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_speed_and_traverse_reference_is_consistent",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_budget_simpler_feedback_allowed",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_control.test_invalid_settings_rejected",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_standard_10km_coated_geometrically_fits",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_standard_10km_buffered_does_not_fit",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_budget_300m_buffered_geom_fits",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_coated_fiber_bend_and_tension_uncertainty_is_explicit",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_incorrect_bend_rejected",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_tension_overlimit_rejected",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_bad_dimensions_fail[-1-100-150-10]",
+      "status": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_bad_dimensions_fail[90-0-150-10]",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_bad_dimensions_fail[90-100-80-10]",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_bad_dimensions_fail[90-100-150--1]",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_bad_dimensions_fail[90-100-150-nan]",
+      "status": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_more_pitch_reduces_capacity",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_negative_speed_rejected",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_fiber_geometry.test_fiber_model_duration_calculated",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_integrity.test_es32_firmware_physical_build_lock",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_integrity.test_docs_links_resolve",
+      "status": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "name": "tests.test_integrity.test_bom_totals_reproducible",
+      "status": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "name": "tests.test_integrity.test_capacity_scenarios_are_transparent",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_integrity.test_firmware_platformio_files_exist",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_integrity.test_no_external_repo_code_reference_dependency",
+      "status": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "name": "tests.test_integrity.test_nc_switch_firmware_polarity_matches_concept_wiring",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_integrity.test_hardwired_estop_not_confused_with_software_enable",
+      "status": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "name": "tests.test_integrity.test_original_concept_illustrations_match_source_manifest",
+      "status": "PASS",
+      "seconds": 0.007
+    },
+    {
+      "name": "PHYSICAL-01 \u2014 Measured spindle shaft/bearing fit and runout",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-02 \u2014 3D-printed drum strength and flange retention",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-03 \u2014 Spindle/brake/dancer alignment",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-04 \u2014 NC safety circuit and independent energy cutoff/restart prevention",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-05 \u2014 Standard enclosure guarding and interlock validation",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-06 \u2014 Control panel and driver current/thermal/electrical validation",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-07 \u2014 Encoder PPR and length cross-check",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-08 \u2014 Load-cell calibration; dynamic tension response and fiber-break verification",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-09 \u2014 Traverse repeatability, homing and travel limit verification",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-10 \u2014 200-300 m real fiber spool tests",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-11 \u2014 10 km real fiber spool test, only qualified thin coated fiber",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "PHYSICAL-12 \u2014 Optical loss/OTDR before and after, bend-radius validation",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "RELEASE-13 \u2014 Supplier-qualified bill of materials",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "RELEASE-14 \u2014 Electrical schematic ERC and safety engineering sign-off",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    },
+    {
+      "name": "RELEASE-15 \u2014 Firmware compile with pinned toolchain + real hardware integration",
+      "status": "BLOCKED",
+      "seconds": 0.0
+    }
+  ],
+  "status": "SOFTWARE_PASS / HARDWARE_HOLD"
+}

@@ -1,0 +1,75 @@
+Optical Fiber Coil Winder — RC1.1 host/software-and-package verification
+UTC 2026-10-13T06:39:38.333661+00:00
+Host suite: PASS; Physical/hardware release: HOLD
+Counts: PASS 47, FAIL 0, SKIP 0, BLOCKED 15
+NOTE: a PASS here is an isolated host/software check, NEVER a real hardware measurement.
+
+[PASS] tests.test_cad_exports.test_cad_has_actual_files
+[PASS] tests.test_cad_exports.test_cad_export_nominal_bounding_boxes
+[PASS] tests.test_cad_exports.test_base_plate_export_dimensions
+[PASS] tests.test_cad_exports.test_spool_outer_diameter_not_greater_than_envelope
+[PASS] tests.test_cad_exports.test_assembly_nominal_envelope
+[PASS] tests.test_cad_exports.test_nominal_parts_still_on_fit_hold
+[PASS] tests.test_cad_exports.test_drill_pattern_matches_base_manifest
+[PASS] tests.test_cad_exports.test_base_drill_no_hole_overlap
+[PASS] tests.test_control.test_machine_homing
+[PASS] tests.test_control.test_cannot_start_without_home
+[PASS] tests.test_control.test_requires_limit_sensor_for_home
+[PASS] tests.test_control.test_standard_fails_without_sensor_feedback
+[PASS] tests.test_control.test_standard_fails_without_tension_limits
+[PASS] tests.test_control.test_max_tension_fail_closed
+[PASS] tests.test_control.test_break_detection_low_tension
+[PASS] tests.test_control.test_encoder_loss_fault
+[PASS] tests.test_control.test_endstop_fault
+[PASS] tests.test_control.test_estop_fault
+[PASS] tests.test_control.test_guard_open_fault
+[PASS] tests.test_control.test_pause_and_stop
+[PASS] tests.test_control.test_finishes_2m
+[PASS] tests.test_control.test_speed_and_traverse_reference_is_consistent
+[PASS] tests.test_control.test_budget_simpler_feedback_allowed
+[PASS] tests.test_control.test_invalid_settings_rejected
+[PASS] tests.test_fiber_geometry.test_standard_10km_coated_geometrically_fits
+[PASS] tests.test_fiber_geometry.test_standard_10km_buffered_does_not_fit
+[PASS] tests.test_fiber_geometry.test_budget_300m_buffered_geom_fits
+[PASS] tests.test_fiber_geometry.test_coated_fiber_bend_and_tension_uncertainty_is_explicit
+[PASS] tests.test_fiber_geometry.test_incorrect_bend_rejected
+[PASS] tests.test_fiber_geometry.test_tension_overlimit_rejected
+[PASS] tests.test_fiber_geometry.test_bad_dimensions_fail[-1-100-150-10]
+[PASS] tests.test_fiber_geometry.test_bad_dimensions_fail[90-0-150-10]
+[PASS] tests.test_fiber_geometry.test_bad_dimensions_fail[90-100-80-10]
+[PASS] tests.test_fiber_geometry.test_bad_dimensions_fail[90-100-150--1]
+[PASS] tests.test_fiber_geometry.test_bad_dimensions_fail[90-100-150-nan]
+[PASS] tests.test_fiber_geometry.test_more_pitch_reduces_capacity
+[PASS] tests.test_fiber_geometry.test_negative_speed_rejected
+[PASS] tests.test_fiber_geometry.test_fiber_model_duration_calculated
+[PASS] tests.test_integrity.test_es32_firmware_physical_build_lock
+[PASS] tests.test_integrity.test_docs_links_resolve
+[PASS] tests.test_integrity.test_bom_totals_reproducible
+[PASS] tests.test_integrity.test_capacity_scenarios_are_transparent
+[PASS] tests.test_integrity.test_firmware_platformio_files_exist
+[PASS] tests.test_integrity.test_no_external_repo_code_reference_dependency
+[PASS] tests.test_integrity.test_nc_switch_firmware_polarity_matches_concept_wiring
+[PASS] tests.test_integrity.test_hardwired_estop_not_confused_with_software_enable
+[PASS] tests.test_integrity.test_original_concept_illustrations_match_source_manifest
+[BLOCKED] PHYSICAL-01 — Measured spindle shaft/bearing fit and runout
+[BLOCKED] PHYSICAL-02 — 3D-printed drum strength and flange retention
+[BLOCKED] PHYSICAL-03 — Spindle/brake/dancer alignment
+[BLOCKED] PHYSICAL-04 — NC safety circuit and independent energy cutoff/restart prevention
+[BLOCKED] PHYSICAL-05 — Standard enclosure guarding and interlock validation
+[BLOCKED] PHYSICAL-06 — Control panel and driver current/thermal/electrical validation
+[BLOCKED] PHYSICAL-07 — Encoder PPR and length cross-check
+[BLOCKED] PHYSICAL-08 — Load-cell calibration; dynamic tension response and fiber-break verification
+[BLOCKED] PHYSICAL-09 — Traverse repeatability, homing and travel limit verification
+[BLOCKED] PHYSICAL-10 — 200-300 m real fiber spool tests
+[BLOCKED] PHYSICAL-11 — 10 km real fiber spool test, only qualified thin coated fiber
+[BLOCKED] PHYSICAL-12 — Optical loss/OTDR before and after, bend-radius validation
+[BLOCKED] RELEASE-13 — Supplier-qualified bill of materials
+[BLOCKED] RELEASE-14 — Electrical schematic ERC and safety engineering sign-off
+[BLOCKED] RELEASE-15 — Firmware compile with pinned toolchain + real hardware integration
+
+=== PYTEST STDOUT ===
+...............................................                          [100%]
+47 passed in 3.87s
+
+=== PYTEST STDERR ===
+

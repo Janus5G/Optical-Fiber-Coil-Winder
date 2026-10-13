@@ -1,0 +1,15 @@
+signal,controller,destination,note
+SPOOL_STEP,ESP32 GPIO18,TMC2209 spool STEP,OUTPUT / 3.3V GPIO
+SPOOL_DIR,ESP32 GPIO19,TMC2209 spool DIR,OUTPUT / 3.3V GPIO
+TRAVERSE_STEP,ESP32 GPIO21,TMC2209 traverse STEP,OUTPUT / 3.3V GPIO
+TRAVERSE_DIR,ESP32 GPIO22,TMC2209 traverse DIR,OUTPUT / 3.3V GPIO
+DRIVER_ENABLE,ESP32 GPIO23,"Both drivers EN (active low, board dependent)",OUTPUT / verify board variant
+TRAVERSE_HOME,ESP32 GPIO32,"NC home switch -> GND, internal pull-up",HEALTHY low / OPEN high=>home or disconnect
+TRAVERSE_FAR,ESP32 GPIO33,"NC far limit switch -> GND, internal pull-up",HEALTHY low / OPEN high=>limit or disconnect
+ESTOP_MONITOR,ESP32 GPIO25,Isolated read-only NC safety relay auxiliary,INPUT / independent motor cutoff required
+GUARD_MONITOR,ESP32 GPIO26,"NC guard switch, standard; budget jumper must be reviewed",INPUT / active low
+HX711_DOUT,ESP32 GPIO34,HX711 DOUT with EXTERNAL electrical bias if needed,INPUT ONLY / standard
+HX711_CLK,ESP32 GPIO27,HX711 SCK,OUTPUT / standard
+ENCODER_A,ESP32 GPIO35,"3.3 V compatible encoder A, external pull-up",INPUT ONLY / standard
+ENCODER_B,ESP32 GPIO39,"3.3 V compatible encoder B, external pull-up",INPUT ONLY / standard
+USB_SERIAL,ESP32 USB,Programming and diagnostics,USB / independent logic power

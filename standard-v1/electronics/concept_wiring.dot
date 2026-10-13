@@ -1,0 +1,30 @@
+digraph System {
+ graph [rankdir=LR, bgcolor="white", pad=0.25, nodesep=0.48, ranksep=0.72, label="CONCEPTUAL WIRING — NOT A QUALIFIED ELECTRICAL SCHEMATIC", labelloc=t, fontname="Helvetica", fontsize=16];
+ node [shape=box, style="rounded,filled", fontname="Helvetica", color="#37647a", fillcolor="#e6f3f8", fontsize=11];
+ edge [fontname="Helvetica", fontsize=10, color="#3b6576"];
+ AC [label="AC mains\nQualified pre-assembled PSU only",fillcolor="#ffe4dc"];
+ PSU [label="Listed isolated 24 V DC PSU\nvoltage + current rating TBD"];
+ safety [label="Independent latching E-stop circuit\nrelay/contactor & fuse\nPOWER CUT on stop",fillcolor="#ffe0cf"];
+ motorPower [label="Motor power distribution\n24 V DC via separate fuses"];
+ driverA [label="TMC2209 module A\nSTEP/DIR/EN + VM/GND"];
+ driverB [label="TMC2209 module B\nSTEP/DIR/EN + VM/GND"];
+ motorA [label="NEMA17 take-up + belt drive"];
+ motorB [label="NEMA17 traverse / T8"];
+ controller [label="ESP32 DevKitC (3.3 V logic)\n5 V isolated USB or rated DC/DC",fillcolor="#dff1df"];
+ home [label="NC Home + Far limit switches"];
+ estop [label="NC safety auxiliary status\nmonitor only"];
+ AC->PSU; PSU->safety[label="24V"]; safety->motorPower[label="24V MOTOR ONLY"]; motorPower->driverA;motorPower->driverB;
+ driverA->motorA;driverB->motorB;
+ controller->driverA[label="GPIO18/19/23\n3.3V logic"];controller->driverB[label="GPIO21/22/23\n3.3V logic"];
+ home->controller[label="GPIO32/33"]; estop->controller[label="GPIO25 read-only"];
+ safety->estop[style=dashed,label="aux status"];
+ 
+ loadcell [label="Tension load cell -> HX711\nCALIBRATION REQUIRED"];
+ encoder [label="Shaft encoder, external pull-ups\nPPR VALIDATION REQUIRED"];
+ guard [label="Physical guard interlock -> safety circuit\nplus read-only GPIO26",fillcolor="#ffe0cf"];
+ loadcell->controller[label="GPIO34 / GPIO27"];
+ encoder->controller[label="GPIO35 / GPIO39"];
+ guard->controller[label="GPIO26 monitor"];
+ guard->safety[label="independent cutoff",color="#d45128"];
+ 
+}

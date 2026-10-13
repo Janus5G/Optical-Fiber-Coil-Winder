@@ -1,0 +1,14 @@
+{
+  "budget-v1": {
+    "line_items": 21,
+    "budget_estimate_dkk": 2242,
+    "cost_basis": "NOT QUOTED; EXCLUDES VAT/SHIPPING/TOOLS/FIBER/LABOUR",
+    "price_status": "ESTIMATE"
+  },
+  "standard-v1": {
+    "line_items": 25,
+    "budget_estimate_dkk": 3327,
+    "cost_basis": "NOT QUOTED; EXCLUDES VAT/SHIPPING/TOOLS/FIBER/LABOUR",
+    "price_status": "ESTIMATE"
+  }
+}

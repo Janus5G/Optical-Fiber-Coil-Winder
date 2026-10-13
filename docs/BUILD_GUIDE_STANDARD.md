@@ -1,0 +1,16 @@
+# Standard/Premium V1 — controlled prototype build sequence
+
+**Not certified or approved for manufacturing.** The Ø150 mm reel and 100 mm width are intended for an *up to 10 km* objective of 0.25 mm nominal outside diameter **only if** the named fiber product's bending/tension limits and optical performance prove acceptable. Wider buffered cable cannot be substituted at 10 km without redesign.
+
+1. **Named fiber qualification.** Identify fiber reel SKU and datasheets, bend limits under winding/unwinding, coating and tension handling procedures. Approve the 45 mm base winding radius or redesign; take into account the full supply/dancer/guide radius path.
+2. **Drum tolerances.** Source Ø8 mm shaft and precision bearing data; measure 608 seats and flange clearance. Print dimensional test coupons. Measure spool runout and calculate available bore-to-flange capacity before any 10 km order.
+3. **Base and mechanically supported spindle.** Manufacture 500 × 250 ×10 mm base. Support each spindle on two metal bearings; do not put the entire spool load on the NEMA17 motor shaft. Model assumes independent timing belt drive whose reduction must be confirmed.
+4. **Reel.** Assemble Ø90 mm reinforced hub, 100 mm wide printed drum and Ø150 mm flanges. Perform material hoop/radial strength and fatigue analysis, secure bolts and dynamic balancing. A full 10 km of coated fiber adds significant mass and many hours of winding; test with inert substitution media first.
+5. **Traverse.** Fit 120 mm travel with normal 100 mm spool width and 2 mm edge margins. Check smooth motion, actual pitch in millimetres per spool revolution, backlash and home/far switches. Prove that flange end constraints are protected by mechanical stops.
+6. **Tension system.** Design and calibrate actual low-friction dancer linkage, inline load cell and HX711 electrical wiring to 3.3 V-compatible MCU inputs. Create measured Newton-per-ADC-count mapping and repeatability records; adjust control speed feedback only within safely established limits.
+7. **Encoder.** Select and mechanically connect an encoder to the **spool shaft** so its pulses represent real drum rotation. Verify PPR, 3.3 V logic conditioning, direction, count reset and motor slip detection. Modify firmware for real mechanical transmission ratio and scaling before commissioning.
+8. **Safety guard.** Adapt concept 500 × 250 × 300 mm panels to a reviewed robust transparent cover. Qualified guard switch must interrupt a separate safety relay/contactor power chain; acrylic enclosure and mounting slots are not proof of protection.
+9. **Electronics.** Engineer isolation, rated supplies and fusing, thermal wiring, cover interlock, proper NC stop circuit and intentional restart. [Electrical overview](../standard-v1/electronics/concept_wiring.svg) is only architecture, not ERC-checked schematic.
+10. **Verification staged.** Host tests, instrumented dummy-media slow run, 1–2 m fiber, 100 m fiber, 200–300 m, and only after all pass, longer staged tests to 10 km with before/after optical loss records. See [TEST_PLAN](TEST_PLAN.md).
+
+Current firmware deliberately does **not** energize motors; it is a review/test prototype and requires control calibration and hardware-specific validation. [Standard BOM](../standard-v1/bom/bom.csv).

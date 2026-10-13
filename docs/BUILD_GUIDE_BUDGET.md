@@ -1,0 +1,15 @@
+# Budget V1 — controlled prototype build sequence
+
+**No prototype fabrication approval is implied.** Steps are ordered checks with stop points. The provided assembly has not been physically built, and nominal printed seats are marked fit-verification required.
+
+1. **Source review.** Confirm operator's intended fiber product has published coating/buffer diameter, bending radius and tensile limits; reject spool if minimum applicable winding radius exceeds 30 mm or if contact guide geometry violates limits. Select fit-approved 8 mm shafts, commercial 608 bearings and actual NEMA17/driver model drawings.
+2. **Bench fit before full printing.** Inspect [`nominal_top_view.png`](../budget-v1/drawings/nominal_top_view.png), [`base_drill_pattern.dxf`](../budget-v1/drawings/base_drill_pattern.dxf) and [`cad_manifest.json`](../results/cad_manifest.json). Print only a fit coupon for Ø22.2 nominal bearing bore and M3 flange pattern; measure hole shrink and tolerance against supplier hardware.
+3. **Rigid base.** Fabricate 420 × 180 ×10 mm plate, verify flatness and orthogonal edge reference. Drill only after matching actual motors and supports. Read bore coordinates from the shared CAD/DXF model, not the illustration.
+4. **Bearing/shaft alignment.** Install 8 mm metal shafts supported by purchased bearings in the two bearing blocks per spindle. Measure concentricity and runout; verify axial retaining hardware and end clearance.
+5. **Take-up drum.** Assemble Ø60 mm core, Ø112 mm flanges, 75 mm width. Confirm positive fixation to shaft, radial printed-web condition, smooth edges and safe strength. **STOP if flange bolts, shaft hub or printed structure cannot be proven adequate**; do not run to rated speed based solely on STL.
+6. **Feed and dancer.** Mount feed roller/brake, dancer pivot and non-abrasive guide. Verify ceramic contact radii with the actual fiber specification; never clamp unprotected fiber on sharp metal.
+7. **Traverse.** Install commercial T8 8-mm-lead leadscrew and smooth guide rods. Confirm the 80 mm nominal travel, prevent collisions into flanges, verify normally closed home and far-stop switches, and check that the fiber eyelet passes without touching flange edges.
+8. **Electronic concept audit.** Compare [wiring overview](../budget-v1/electronics/concept_wiring.svg) and [GPIO assignment](../budget-v1/electronics/gpio_assignments.csv) to the actual purchased ESP32/TMC2209 documentation. Wire motor current limits, fusing, a qualified independent stop circuit and restart prevention only under competent electrical review.
+9. **Source-level acceptance.** Run host test script; inspect firmware with `ENABLE_REAL_MOTION 0`. No powered run is permitted by this guide; commissioning proceeds only under the [formal test plan](TEST_PLAN.md) after safety/fit gates pass.
+
+Parts and estimated allowances: [Budget BOM](../budget-v1/bom/bom.csv) and [notes](../budget-v1/bom/BOM_NOTES.md). Initial concept price 900–1,760 DKK is NOT achieved by the planning component estimate; no supplier quotes are verified.

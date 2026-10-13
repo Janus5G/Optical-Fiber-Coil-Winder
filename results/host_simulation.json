@@ -1,0 +1,19 @@
+{
+  "kind": "SYNTHETIC_HOST_SIMULATION",
+  "state": "FINISHED",
+  "meters": 2.0,
+  "turns": 7.053954412012306,
+  "traverse_mm": 2.2043607537538454,
+  "trace": [
+    "READY",
+    "RUNNING",
+    "FINISHED"
+  ],
+  "motor_reference": {
+    "spindle_rpm": 7.0539586965937,
+    "spindle_step_hz": 376.21113048499734,
+    "traverse_step_hz": 14.695747284570208,
+    "direction": 1,
+    "radius_mm": 45.125
+  }
+}

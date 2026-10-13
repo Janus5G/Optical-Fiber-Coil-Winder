@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact original owner-provided concept images: source bytes copied unchanged; concept art, not as-built photos",
+  "date_received": "2026-10-13",
+  "images": [
+    {
+      "file": "budget-original.png",
+      "source_uploaded_filename": "Spoolemaskine(2).png",
+      "sha256": "aef2a0772ea27acb7f7389ba2bbf805162255ca67bb6065a2812537733591325",
+      "size_bytes": 2743663,
+      "dimensions_px": [
+        1055,
+        1491
+      ],
+      "role": "Budget V1 / 200–300 m concept",
+      "source_type": "user-supplied concept illustration, original bytes",
+      "verification": "exact byte copy in release staging; underlying illustration is not a photographed prototype"
+    },
+    {
+      "file": "standard-original.png",
+      "source_uploaded_filename": "spolemaskine-dyr(3).png",
+      "sha256": "382232c83a4e2a838c812309079c85962d8aa7b374f19a6edcf8b103f047c7ad",
+      "size_bytes": 2812791,
+      "dimensions_px": [
+        1055,
+        1491
+      ],
+      "role": "Standard/Premium / up to 10 km thin-fiber objective",
+      "source_type": "user-supplied concept illustration, original bytes",
+      "verification": "exact byte copy in release staging; underlying illustration is not a photographed prototype"
+    }
+  ]
+}

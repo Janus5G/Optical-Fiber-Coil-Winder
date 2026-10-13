@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you discuss this concept in research, please cite this engineering prototype package; confirm redistribution rights with the author."
+title: "Optical Fiber Coil Winder: Budget and Standard engineering prototype"
+authors:
+  - family-names: "Rokkjær"
+    given-names: "Janus"
+version: "1.0.0-RC1"
+date-released: "2026-10-13"
+type: software
+license: "LicenseRef-Proprietary-Pending-Owner-Review"
