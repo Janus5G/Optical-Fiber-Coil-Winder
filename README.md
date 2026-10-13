@@ -7,13 +7,13 @@
 
 **Documentation:** English (this file) · [Dansk](README_DA.md) · [Release evidence](docs/VERIFICATION_REPORT.md) · [Safety](docs/SAFETY.md) · [License review](LICENSE_REVIEW.md)
 
-### Original design concepts (unchanged owner-supplied images)
+### Concept illustrations — English adaptations
 
 ![Budget Optical Fiber Coil Winder](assets/english-concepts/budget-en.png)
 
 ![Standard Optical Fiber Coil Winder](assets/english-concepts/standard-en.png)
 
-These images are *conceptual illustrations*, not photographs or evidence of as-built devices. Their original bytes and SHA-256 are documented in the [source image manifest](assets/original-concept-images/SOURCE_MANIFEST.json).
+These English-language illustrations are **adapted visual concepts**, not photographs, exact copies of the original Danish images, or verified construction drawings. The [original Danish illustrations](README_DA.md) remain unchanged and are recorded in the [source image manifest](assets/original-concept-images/SOURCE_MANIFEST.json). See the [English illustration provenance](assets/english-concepts/README.md). **The Budget illustration shows the original DKK 900–1,760 target, not the current DKK 2,242 component estimate**. All depicted dimensions, capacities and safety functions require engineering and physical verification.
 
 ### Nominal engineering views (generated from CAD)
 
