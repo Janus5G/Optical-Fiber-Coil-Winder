@@ -9,9 +9,9 @@
 
 ### Original design concepts (unchanged owner-supplied images)
 
-![Budget fibre-winder concept illustration](assets/original-concept-images/budget-original.png)
+![Budget Optical Fiber Coil Winder](assets/english-concepts/budget-en.png)
 
-![Standard/Premium fibre-winder concept illustration](assets/original-concept-images/standard-original.png)
+![Standard Optical Fiber Coil Winder](assets/english-concepts/standard-en.png)
 
 These images are *conceptual illustrations*, not photographs or evidence of as-built devices. Their original bytes and SHA-256 are documented in the [source image manifest](assets/original-concept-images/SOURCE_MANIFEST.json).
 
